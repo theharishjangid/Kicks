@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Rubik";
+    src: local("Rubik-SemiBold"),
+        url("./Assets/Font/Rubik-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: local("OpenSans-Regular"),
+        url("./Assets/Font/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: local("OpenSans-SemiBold"),
+        url("./Assets/Font/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__container {
+    width: 100%;
+    max-width: 85rem;
+    margin: 2rem 3rem;
+
+    @media screen and (max-width: 1000px) {
+        margin: 2rem 2.5rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin: 1.75rem 1.5rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        margin: 1.5rem 1rem;
+    }
+}

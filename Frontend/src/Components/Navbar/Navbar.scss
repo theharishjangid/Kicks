@@ -1,0 +1,114 @@
+.app__navbar__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    padding: 1.25rem;
+    font-family: "Rubik";
+    background-color: var(--light_white-color);
+    border-radius: 1.5rem;
+
+    img {
+        height: 2rem;
+        justify-self: center;
+
+        @media screen and (max-width: 1000px) {
+            height: 1.75rem;
+        }
+
+        @media screen and (max-width: 750px) {
+            height: 1.5rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            height: 1.25rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        border-radius: 1.2rem;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        border-radius: 1rem;
+        padding: 0.9rem 1rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        grid-template-columns: 1.5fr 2.5fr 1.5fr;
+        padding: 0.75rem 1rem;
+        border-radius: 0.75rem;
+    }
+}
+
+.app__navbar__container-left_tab {
+    display: flex;
+    justify-self: flex-start;
+
+
+    p {
+        font-size: 1rem;
+        margin-right: 1.25rem;
+
+        @media screen and (max-width: 1000px) {
+            margin-right: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
+}
+
+.app__navbar__container-left_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    svg {
+        height: 1.5rem;
+        width: 1.5rem;
+
+        @media screen and (max-width: 450px) {
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+    }
+
+    @media screen and (min-width: 751px) {
+        display: none;
+    }
+}
+
+.app__navbar__container-right_tab {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+
+    svg {
+        height: 1.75rem;
+        width: 1.75rem;
+        margin-left: 1.25rem;
+
+        &:nth-child(1) {
+            @media screen and (max-width: 750px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        @media screen and (max-width: 750px) {
+            margin-left: 0.75rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+    }
+}
