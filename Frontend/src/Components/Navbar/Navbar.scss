@@ -42,7 +42,6 @@
 }
 
 .app__navbar__container-left_tab {
-    display: flex;
     justify-self: flex-start;
 
 
@@ -81,8 +80,6 @@
 }
 
 .app__navbar__container-right_tab {
-    display: flex;
-    align-items: center;
     justify-self: flex-end;
 
     svg {

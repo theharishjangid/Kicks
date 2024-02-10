@@ -41,10 +41,48 @@
     }
 }
 
+.app__page__container {
+    flex-basis: 100%;
+    max-width: 85rem;
+    margin: 0 3rem;
+
+    @media screen and (max-width: 1000px) {
+        margin: 0 2.5rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin: 0 1.5rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        margin: 0 1rem;
+    }
+}
+
 .app__flex {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+h2 {
+    font-size: 4.5rem;
+    max-width: 45rem;
+    font-family: "Rubik";
+    text-transform: uppercase;
+    color: var(--dark_gray-color);
+
+    @media screen and (max-width: 1000px) {
+        font-size: 3.5rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 1.5rem;
+    }
 }
 
 h3 {
@@ -60,3 +98,16 @@ h3 {
     }
 }
 
+h4 {
+    font-size: 1.5rem;
+    font-family: "Rubik";
+    color: var(--dark_gray-color);
+
+    @media screen and (max-width: 750px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 1rem;
+    }
+}

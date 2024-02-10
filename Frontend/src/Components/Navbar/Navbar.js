@@ -7,7 +7,7 @@ import { HiMenu } from "react-icons/hi";
 const Navbar = () => {
   return (
     <nav className="app__container app__navbar__container">
-      <ul className="app__navbar__container-left_tab">
+      <ul className="app__flex app__navbar__container-left_tab">
         <p>🔥 New Drops</p>
         <p>Men</p>
         <p>Women</p>
@@ -16,7 +16,7 @@ const Navbar = () => {
         <HiMenu />
       </div>
       <img src="logo.svg" alt="logo" />
-      <div className="app__navbar__container-right_tab">
+      <div className="app__flex app__navbar__container-right_tab">
         <IoSearch />
         <IoPerson />
         <RiShoppingCartLine />

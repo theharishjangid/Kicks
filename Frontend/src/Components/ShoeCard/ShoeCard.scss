@@ -1,0 +1,89 @@
+.shoe_card__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoe_card__container-img {
+    width: 100%;
+    background-image: url("../../Assets/shoe.png");
+    background-size: cover;
+    background-position: center;
+    border: 0.5rem solid var(--white-color);
+    border-radius: 1.75rem;
+
+    p {
+        font-size: 0.75rem;
+        font-family: "Rubik";
+        width: fit-content;
+        border-radius: 1.25rem 0 1.25rem 0;
+        color: var(--white-color);
+        background: var(--blue-color);
+        padding: 0.75rem 1rem;
+        margin-bottom: 14rem;
+
+        @media screen and (max-width: 1000px) {
+            border-radius: 1rem 0 1rem 0;
+        }
+
+        @media screen and (max-width: 750px) {
+            margin-bottom: 12rem;
+            border-radius: 0.75rem 0 0.75rem 0;
+            padding: 0.5rem 0.75rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin-bottom: 10rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            padding: 0.25rem 0.5rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        border-radius: 1.5rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        border-radius: 1.25rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        border-radius: 1rem;
+    }
+
+}
+
+.shoe_card__container-body {
+
+    h4 {
+        margin: 1rem 0;
+
+        @media screen and (max-width: 750px) {
+            margin: 0.75rem 0;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin: 0.5rem 0;
+        }
+    }
+
+    button {
+        outline: none;
+        border: none;
+        width: 100%;
+        font-family: "Rubik";
+        font-size: 0.85rem;
+        color: var(--white-color);
+        background: var(--dark_gray-color);
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--hover_gray-color);
+        }
+
+        span {
+            color: var(--yellow-color);
+        }
+    }
+}
