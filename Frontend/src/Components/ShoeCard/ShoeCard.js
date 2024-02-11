@@ -15,7 +15,7 @@ const ShoeCard = (props) => {
       <div className="shoe_card__container-body">
         <h4>{props.title}</h4>
         <button onClick={() => {navigate(`/products/${props.productId}`)}} >
-          View Product - <span>{props.price}</span>
+          View Product - <span>${props.price}</span>
         </button>
       </div>
     </div>

@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const CategoriesCard = (props) => {
   const styles = {
-    backgroundColor: props.id % 2 === 0 ? "#FAFAFA" : "#ECEEF0",
+    backgroundColor: props.id % 2 === 0 ? "var(--light_blue-color)" : "var(--off_white-color)",
   };
   return (
     <div className="app__flex category_card__container" style={styles}>
       <img src={props.image} alt={props.name} />
       <div className="category_card__container-title">
-        <p>{props.name} Shoes</p>
+        <p>{props.name} <br /> Shoes</p>
         <Link
           to={{
             pathname: "/products",
