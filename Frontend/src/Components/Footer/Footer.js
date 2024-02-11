@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import Logo from "../../Assets/logo.svg";
 import FooterLogo from "../../Assets/footer_logo.svg";
+import { Link } from "react-router-dom";
 import {
   FaPlus,
   FaFacebook,
@@ -32,40 +33,122 @@ const Footer = () => {
           <div className="app__footer__bottom-about">
             <h5>About us</h5>
             <p>
-              We are the biggest hyperstore in the town. We got you all cover
+              We are the biggest hyperstore in the town. We got you all covered
               with our exclusive collections and latest drops.
             </p>
           </div>
           <div className="app__footer__bottom-links_container">
             <div className="app__footer__bottom-links">
               <h5>Categories</h5>
-              <p>Runners</p>
-              <p>Sneakers</p>
-              <p>Basketball</p>
-              <p>Outdoor</p>
-              <p>Golf</p>
-              <p>Hiking</p>
+              <Link
+                to={{
+                  pathname: "/products",
+                  search: new URLSearchParams({
+                    category: "sneaker",
+                  }).toString(),
+                }}
+              >
+                Sneaker
+              </Link>
+              <Link
+                to={{
+                  pathname: "/products",
+                  search: new URLSearchParams({
+                    category: "basketball",
+                  }).toString(),
+                }}
+              >
+                Basketball
+              </Link>
+              <Link
+                to={{
+                  pathname: "/products",
+                  search: new URLSearchParams({
+                    category: "runner",
+                  }).toString(),
+                }}
+              >
+                Runner
+              </Link>
+              <Link
+                to={{
+                  pathname: "/products",
+                  search: new URLSearchParams({
+                    category: "outdoor",
+                  }).toString(),
+                }}
+              >
+                Outdoor
+              </Link>
+              <Link
+                to={{
+                  pathname: "/products",
+                  search: new URLSearchParams({
+                    category: "golf",
+                  }).toString(),
+                }}
+              >
+                Golf
+              </Link>
+              <Link
+                to={{
+                  pathname: "/products",
+                  search: new URLSearchParams({
+                    category: "hiking",
+                  }).toString(),
+                }}
+              >
+                Hiking
+              </Link>
             </div>
             <div className="app__footer__bottom-links">
               <h5>Company</h5>
-              <p>About</p>
-              <p>Contact</p>
-              <p>Blogs</p>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/blogs">Blogs</Link>
             </div>
             <div className="app__footer__bottom-links">
               <h5>Follow us</h5>
               <div>
-                <FaFacebook />
-                <FaInstagram />
-                <FaTwitter />
-                <FaTiktok />
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaInstagram />
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+                  <FaTwitter />
+                </a>
+                <a
+                  href="https://www.tiktok.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaTiktok />
+                </a>
               </div>
             </div>
           </div>
         </div>
         <img src={FooterLogo} alt="logo_big" />
         <div className="app__footer__copyright">
-          © All rights reserved | Made with ❤️ by Harish Jangid
+          © All rights reserved | Developed by{" "}
+          <a
+            href="https://theharishjangid.github.io/harishjangid/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Harish Jangid
+          </a>
         </div>
       </div>
     </div>

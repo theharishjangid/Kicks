@@ -67,7 +67,6 @@
 
 h2 {
     font-size: 4.5rem;
-    max-width: 45rem;
     font-family: "Rubik";
     text-transform: uppercase;
     color: var(--dark_gray-color);
@@ -110,4 +109,9 @@ h4 {
     @media screen and (max-width: 450px) {
         font-size: 1rem;
     }
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark_gray-color);
 }

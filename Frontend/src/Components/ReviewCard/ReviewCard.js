@@ -7,11 +7,11 @@ const ReviewCard = (props) => {
         const star_list = [];
         for (let i = 1; i <= 5; i++) {
           if (i <= rating) {
-            star_list.push(<BsStarFill className='rating' />);
+            star_list.push(<BsStarFill key={i} className='rating' />);
           } else if (i - 0.5 === rating) {
-            star_list.push(<BsStarHalf className='rating' />);
+            star_list.push(<BsStarHalf key={i} className='rating' />);
           } else {
-            star_list.push(<BsStar className='rating' />);
+            star_list.push(<BsStar key={i} className='rating' />);
           }
         }
         return star_list

@@ -107,7 +107,8 @@
 
             &:hover {
                 cursor: pointer;
-                background: var(--hover_gray-color);
+                background: var(--white-color);
+                color: var(--blue-color);
             }
         }
     }
@@ -190,20 +191,6 @@
         color: var(--yellow-color);
     }
 
-    p {
-        font-size: 1.25rem;
-        font-family: "OpenSans-SemiBold";
-        margin: 0.5rem 0;
-
-        @media screen and (max-width: 750px) {
-            font-size: 1.1rem;
-        }
-
-        @media screen and (max-width: 450px) {
-            font-size: 1rem;
-        }
-    }
-
     @media screen and (max-width: 1000px) {
         flex-direction: column;
     }
@@ -240,9 +227,17 @@
 
     p {
         width: 70%;
+        font-size: 1.25rem;
+        font-family: "OpenSans-SemiBold";
+        margin: 0.5rem 0;
 
         @media screen and (max-width: 750px) {
+            font-size: 1.1rem;
             width: 100%;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 1rem;
         }
     }
 
@@ -267,6 +262,8 @@
 }
 
 .app__footer__bottom-links {
+    display: flex;
+    flex-direction: column;
 
     h5 {
         font-size: 1.5rem;
@@ -285,6 +282,25 @@
         }
     }
 
+    a {
+        color: var(--gray-color);
+        font-size: 1.25rem;
+        font-family: "OpenSans-SemiBold";
+        margin: 0.5rem 0;
+
+        &:hover {
+            color: var(--yellow-color);
+        }
+
+        @media screen and (max-width: 750px) {
+            font-size: 1.1rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 1rem;
+        }
+    }
+
     div {
         display: flex;
         width: fit-content;
@@ -293,7 +309,7 @@
         svg{
             height: 1.5rem;
             width: 1.5rem;
-            margin: 0.5rem;
+            margin: 0 0.5rem;
         }
     }
 
@@ -315,6 +331,11 @@
     font-family: "OpenSans-Regular";
     color: var(--dark_gray-color);
     text-align: center;
+
+    a {
+        color: var(--blue-color);
+        text-decoration: underline;
+    }
 
     @media screen and (max-width: 1000px) {
         bottom: -9%;

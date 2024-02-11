@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="home__hero__left_side-heading">
             <h2>Nike air max</h2>
             <p>Nike introducing the new air max for everyone's comfort</p>
-            <PrimaryButton name="shop now" />
+            <PrimaryButton name="shop now" to="/products/1"/>
           </div>
         </div>
         <div className="home__hero__right_side">

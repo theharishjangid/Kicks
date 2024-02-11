@@ -13,7 +13,7 @@ const Reviews = () => {
     <div className="app__page__container app__flex home__reviews__container">
       <div className="home__reviews__container-heading">
         <h2>Reviews</h2>
-        <PrimaryButton name="see all" />
+        <PrimaryButton name="see all" to="/reviews"/>
       </div>
       <div className="home__reviews__container-body">
         <ReviewCard
