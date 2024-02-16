@@ -7,14 +7,14 @@ import CategoriesData from "../../../Data/Categories";
 const Categories = () => {
   const [categoryIndex, setCategoryIndex] = useState({ start: 0, end: 2 });
   const [buttonStyles, setButtonStyles] = useState({
-    Back: { backgroundColor: "var(--light_gray-color)", cursor: "auto" },
+    Back: { backgroundColor: "var(--disable_bg-color)", pointerEvents: "none" },
     Forward: {},
   });
   const handleBackButton = () => {
     if (categoryIndex.start === 2) {
       setButtonStyles({
         ...buttonStyles,
-        Back: { backgroundColor: "var(--light_gray-color)", cursor: "auto" },
+        Back: { backgroundColor: "var(--disable_bg-color)", pointerEvents: "none" },
       });
       setCategoryIndex({
         start: categoryIndex.start - 2,
@@ -38,7 +38,7 @@ const Categories = () => {
     } else if (categoryIndex.end === 4) {
       setButtonStyles({
         ...buttonStyles,
-        Forward: { backgroundColor: "var(--light_gray-color)", cursor: "auto" },
+        Forward: { backgroundColor: "var(--disable_bg-color)", pointerEvents: "none" },
       });
       setCategoryIndex({
         start: categoryIndex.start + 2,

@@ -13,7 +13,7 @@ const ShoeCard = (props) => {
         {props.tag && <p>{props.tag}</p>}
       </div>
       <div className="shoe_card__container-body">
-        <h4>{props.title}</h4>
+        <h5>{props.name}</h5>
         <button onClick={() => {navigate(`/products/${props.productId}`)}} >
           View Product - <span>${props.price}</span>
         </button>

@@ -107,8 +107,7 @@
 
             &:hover {
                 cursor: pointer;
-                background: var(--white-color);
-                color: var(--blue-color);
+                background: var(--black-color);
             }
         }
     }
@@ -186,7 +185,7 @@
     display: flex;
     margin-bottom: 4rem;
 
-    h5 {
+    h6 {
         font-family: "Rubik";
         color: var(--yellow-color);
     }
@@ -208,7 +207,7 @@
 .app__footer__bottom-about {
     width: 50%;
 
-    h5 {
+    h6 {
         font-size: 2.25rem;
         margin-bottom: 0.5rem;
 
@@ -265,7 +264,7 @@
     display: flex;
     flex-direction: column;
 
-    h5 {
+    h6 {
         font-size: 1.5rem;
         margin-bottom: 0.75rem;
 

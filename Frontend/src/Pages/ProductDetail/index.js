@@ -1,5 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Details from "./Details/Details";
+import Suggestions from "./Suggestions/Suggestions";
 
 const ProductDetail = () => {
   React.useEffect(() => {
@@ -8,7 +10,8 @@ const ProductDetail = () => {
   const { productId } = useParams();
   return (
     <React.Fragment>
-      <h2>ProductDetail - {productId}</h2>
+      <Details productId={parseInt(productId)}/>
+      <Suggestions />
     </React.Fragment>
   );
 };

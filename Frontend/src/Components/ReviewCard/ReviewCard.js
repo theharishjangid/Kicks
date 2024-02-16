@@ -21,7 +21,7 @@ const ReviewCard = (props) => {
         <div className="app__flex review_card__container-top">
             <div className='app__flex review_card__container-top-section'>
                 <div>
-                    <h5>{props.name}</h5>
+                    <h6>{props.name}</h6>
                     <p>{props.feedback}</p>
                 </div>
                 <img src={props.profile_img} alt={`profile-${props.name}`}/>

@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="app__footer__bottom-container">
         <div className="app__footer__bottom">
           <div className="app__footer__bottom-about">
-            <h5>About us</h5>
+            <h6>About us</h6>
             <p>
               We are the biggest hyperstore in the town. We got you all covered
               with our exclusive collections and latest drops.
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           <div className="app__footer__bottom-links_container">
             <div className="app__footer__bottom-links">
-              <h5>Categories</h5>
+              <h6>Categories</h6>
               <Link
                 to={{
                   pathname: "/products",
@@ -102,14 +102,14 @@ const Footer = () => {
               </Link>
             </div>
             <div className="app__footer__bottom-links">
-              <h5>Company</h5>
+              <h6>Company</h6>
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/blogs">Blogs</Link>
             </div>
             <div className="app__footer__bottom-links">
-              <h5>Follow us</h5>
+              <h6>Follow us</h6>
               <div>
                 <a
                   href="https://www.facebook.com/"

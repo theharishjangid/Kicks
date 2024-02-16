@@ -1,7 +1,7 @@
 import React from "react";
 import "./New.scss";
 import { PrimaryButton, ShoeCard } from "../../../Components";
-import ShoesData from "../../../Data/Shoes";
+import { ShoesData } from "../../../Data/Shoes";
 
 const New = () => {
   return (
@@ -11,15 +11,17 @@ const New = () => {
         <PrimaryButton name="view all" to="/products" />
       </div>
       <div className="home__new__container-body">
-        {ShoesData.filter((item) => item.tag === "New").map((shoe) => (
-          <ShoeCard
-            productId={shoe.productId}
-            tag={shoe.tag}
-            image={shoe.image}
-            title={shoe.title}
-            price={shoe.price}
-          />
-        ))}
+        {ShoesData.filter((item) => item.tag === "New")
+          .slice(0, 4)
+          .map((shoe) => (
+            <ShoeCard
+              productId={shoe.productId}
+              tag={shoe.tag}
+              image={shoe.image1}
+              name={shoe.name}
+              price={shoe.price}
+            />
+          ))}
       </div>
     </div>
   );
