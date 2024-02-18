@@ -5,9 +5,9 @@ const Blogs = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <React.Fragment>
+    <div className="app__page__container">
       <h2>Blogs</h2>
-    </React.Fragment>
+    </div>
   );
 };
 

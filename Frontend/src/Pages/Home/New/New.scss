@@ -43,7 +43,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     @media screen and (max-width: 1000px) {

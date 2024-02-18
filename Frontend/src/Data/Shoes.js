@@ -5,12 +5,32 @@ import Shoe5 from "../Assets/Shoes/5.png";
 
 const AvailableSizes = [38, 39, 40, 41, 42, 43, 44, 45, 46, 47];
 
+const AvailableColors = [
+  "blue",
+  "yellow",
+  "red",
+  "green",
+  "off_white",
+  "orange",
+  "off_gray",
+  "cement",
+  "brown",
+  "tan",
+];
+
+const AvailableTags = [
+  { tag: "New", name: "New Drops" },
+  { tag: "Casual", name: "Casuals" },
+  { tag: "20", name: "20% Off" },
+];
+
 const ShoesData = [
   {
     productId: 1,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     image1: Shoe2,
     image2: Shoe2,
     image3: Shoe2,
@@ -25,7 +45,8 @@ const ShoesData = [
     productId: 2,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe2,
     image2: Shoe2,
@@ -41,7 +62,8 @@ const ShoesData = [
     productId: 3,
     name: "Adidas Ultra boost light running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe3,
     image2: Shoe3,
@@ -57,7 +79,8 @@ const ShoesData = [
     productId: 4,
     name: "Adidas Originals OZELIA Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe4,
     image2: Shoe4,
@@ -73,7 +96,8 @@ const ShoesData = [
     productId: 5,
     name: "Adidas Unisex-Adult running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe5,
     image2: Shoe5,
@@ -89,7 +113,8 @@ const ShoesData = [
     productId: 6,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     image1: Shoe2,
     image2: Shoe2,
     image3: Shoe2,
@@ -104,7 +129,8 @@ const ShoesData = [
     productId: 7,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe2,
     image2: Shoe2,
@@ -120,7 +146,8 @@ const ShoesData = [
     productId: 8,
     name: "Adidas Ultra boost light running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe3,
     image2: Shoe3,
@@ -136,7 +163,8 @@ const ShoesData = [
     productId: 9,
     name: "Adidas Originals OZELIA Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe4,
     image2: Shoe4,
@@ -152,7 +180,8 @@ const ShoesData = [
     productId: 10,
     name: "Adidas Unisex-Adult running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe5,
     image2: Shoe5,
@@ -168,7 +197,8 @@ const ShoesData = [
     productId: 11,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     image1: Shoe2,
     image2: Shoe2,
     image3: Shoe2,
@@ -183,7 +213,8 @@ const ShoesData = [
     productId: 12,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe2,
     image2: Shoe2,
@@ -199,7 +230,8 @@ const ShoesData = [
     productId: 13,
     name: "Adidas Ultra boost light running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe3,
     image2: Shoe3,
@@ -215,7 +247,8 @@ const ShoesData = [
     productId: 14,
     name: "Adidas Originals OZELIA Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe4,
     image2: Shoe4,
@@ -231,7 +264,8 @@ const ShoesData = [
     productId: 15,
     name: "Adidas Unisex-Adult running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe5,
     image2: Shoe5,
@@ -247,7 +281,8 @@ const ShoesData = [
     productId: 15,
     name: "Adidas Unisex-Adult running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe5,
     image2: Shoe5,
@@ -263,7 +298,8 @@ const ShoesData = [
     productId: 16,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     image1: Shoe2,
     image2: Shoe2,
     image3: Shoe2,
@@ -278,7 +314,8 @@ const ShoesData = [
     productId: 17,
     name: "Adidas 4DFWD X Parley Running Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe2,
     image2: Shoe2,
@@ -294,7 +331,8 @@ const ShoesData = [
     productId: 18,
     name: "Adidas Ultra boost light running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe3,
     image2: Shoe3,
@@ -310,7 +348,8 @@ const ShoesData = [
     productId: 19,
     name: "Adidas Originals OZELIA Shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe4,
     image2: Shoe4,
@@ -326,7 +365,8 @@ const ShoesData = [
     productId: 20,
     name: "Adidas Unisex-Adult running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe5,
     image2: Shoe5,
@@ -342,7 +382,8 @@ const ShoesData = [
     productId: 21,
     name: "Adidas Unisex-Adult running shoes",
     title: "A COMFY, ALL-TIME CLASSIC MADE IN PART WITH RECYCLED MATERIALS.",
-    description: "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
+    description:
+      "If you could only have one pair of sneakers, this could be them. These adidas Grand Court shoes with the classic 3-Stripes keep your sneaker game sharp and clean. Cloud foam Comfort cushioning keeps the insides soft and pillowy. Pair them with any of your favourite pants because these will take you anywhere and everywhere.",
     tag: "New",
     image1: Shoe5,
     image2: Shoe5,
@@ -356,4 +397,4 @@ const ShoesData = [
   },
 ];
 
-export { AvailableSizes, ShoesData };
+export { AvailableSizes, AvailableColors, AvailableTags, ShoesData };

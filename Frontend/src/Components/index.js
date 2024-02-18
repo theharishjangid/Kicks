@@ -4,5 +4,14 @@ import PrimaryButton from "./PrimaryButton/PrimaryButton";
 import ShoeCard from "./ShoeCard/ShoeCard";
 import CategoriesCard from "./CategoriesCard/CategoriesCard";
 import ReviewCard from "./ReviewCard/ReviewCard";
+import Filters from "./Filters/Filters";
 
-export { Navbar, Footer, PrimaryButton, ShoeCard, CategoriesCard, ReviewCard };
+export {
+  Navbar,
+  Footer,
+  PrimaryButton,
+  ShoeCard,
+  CategoriesCard,
+  ReviewCard,
+  Filters,
+};

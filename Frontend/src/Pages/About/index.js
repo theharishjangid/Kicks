@@ -5,9 +5,9 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <React.Fragment>
+    <div className="app__page__container">
       <h2>About</h2>
-    </React.Fragment>
+    </div>
   );
 };
 

@@ -9,10 +9,10 @@ const ProductDetail = () => {
   }, []);
   const { productId } = useParams();
   return (
-    <React.Fragment>
+    <div className="app__page__container">
       <Details productId={parseInt(productId)}/>
       <Suggestions />
-    </React.Fragment>
+    </div>
   );
 };
 

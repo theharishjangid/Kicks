@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link
           to={{
             pathname: "/products",
-            search: new URLSearchParams({ category: "new drops" }).toString(),
+            search: new URLSearchParams({ tag: "New" }).toString(),
           }}
         >
           🔥 New Drops

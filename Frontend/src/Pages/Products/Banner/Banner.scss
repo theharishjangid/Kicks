@@ -1,0 +1,84 @@
+.products__banner {
+    background-image: url("../../../Assets/products.png");
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 2.5rem;
+    border-radius: 4rem;
+    color: var(--gray-color);
+    width: 100%;
+
+    h1 {
+        font-family: "OpenSans-SemiBold";
+        font-size: 1.5rem;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 1.25rem;
+        }
+
+        @media screen and (max-width: 750px) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 0.75rem;
+        }
+    }
+
+    h2 {
+        font-family: "Rubik";
+        font-size: 4.5rem;
+        color: var(--white-color);
+
+        @media screen and (max-width: 1000px) {
+            font-size: 3.5rem;
+        }
+
+        @media screen and (max-width: 750px) {
+            font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    p {
+        max-width: 40%;
+        font-family: "OpenSans-Regular";
+        font-size: 1.25rem;
+
+        @media screen and (max-width: 1250px) {
+            max-width: 55%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            font-size: 1rem;
+            max-width: 61%;
+        }
+
+        @media screen and (max-width: 750px) {
+            font-size: 0.8rem;
+            max-width: 60%;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 0.625rem;
+            max-width: 55%;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        border-radius: 3rem;
+        padding: 4.5rem 2rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        border-radius: 2rem;
+        padding: 3.5rem 1.5rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+    }
+}

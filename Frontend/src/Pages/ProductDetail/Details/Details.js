@@ -18,7 +18,7 @@ const Details = (props) => {
     product_details.image4,
   ];
   return (
-    <div className="app__page__container product_detail__details__container">
+    <div className="product_detail__details__container">
       <div className="product_detail__details__container-images">
         {images.map((image) => (
           <img src={image} alt={props.name} />
@@ -69,7 +69,6 @@ const Details = (props) => {
         <div className="sizes_list">
           {AvailableSizes.map((size, index) => (
             <div
-              key={index}
               className={
                 product_details.sizes.includes(size)
                   ? selectedSize === size

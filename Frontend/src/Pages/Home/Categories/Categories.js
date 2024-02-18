@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Categories.scss";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { CategoriesCard } from "../../../Components";
-import CategoriesData from "../../../Data/Categories";
+import { CategoriesData } from "../../../Data/Categories";
 
 const Categories = () => {
   const [categoryIndex, setCategoryIndex] = useState({ start: 0, end: 2 });
@@ -14,7 +14,10 @@ const Categories = () => {
     if (categoryIndex.start === 2) {
       setButtonStyles({
         ...buttonStyles,
-        Back: { backgroundColor: "var(--disable_bg-color)", pointerEvents: "none" },
+        Back: {
+          backgroundColor: "var(--disable_bg-color)",
+          pointerEvents: "none",
+        },
       });
       setCategoryIndex({
         start: categoryIndex.start - 2,
@@ -38,7 +41,10 @@ const Categories = () => {
     } else if (categoryIndex.end === 4) {
       setButtonStyles({
         ...buttonStyles,
-        Forward: { backgroundColor: "var(--disable_bg-color)", pointerEvents: "none" },
+        Forward: {
+          backgroundColor: "var(--disable_bg-color)",
+          pointerEvents: "none",
+        },
       });
       setCategoryIndex({
         start: categoryIndex.start + 2,

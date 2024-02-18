@@ -43,7 +43,7 @@ const Suggestions = () => {
     setCurrentPage(currentPage + 1);
   };
   return (
-    <div className="app_flex app__page__container product_detail__suggestion__container">
+    <div className="app_flex product_detail__suggestion__container">
       <div className="product_detail__suggestion__container-heading">
         <h3>You may also like</h3>
         <div>
@@ -73,7 +73,10 @@ const Suggestions = () => {
       </div>
       <div className="app__flex product_detail__suggestion__container-slider">
         {[1, 2, 3, 4].map((pageNumber, index) => (
-          <div key={index} className={pageNumber === currentPage ? "current_page" : ""} />
+          <div
+            key={index}
+            className={pageNumber === currentPage ? "current_page" : ""}
+          />
         ))}
       </div>
     </div>
