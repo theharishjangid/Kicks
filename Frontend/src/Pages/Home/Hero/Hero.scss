@@ -1,6 +1,6 @@
 .home__hero__container {
     flex-direction: column;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 
     h1 {
         font-size: 14.5vw;
@@ -18,11 +18,11 @@
     }
 
     @media screen and (max-width: 750px) {
-        margin-bottom: 1.75rem;
+        padding-bottom: 1.75rem;
     }
 
     @media screen and (max-width: 450px) {
-        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 }
 

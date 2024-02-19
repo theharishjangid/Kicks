@@ -3,8 +3,10 @@ import "./Details.scss";
 import { ShoesData, AvailableSizes } from "../../../Data/Shoes";
 import { BsCircleFill } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa6";
+import useCart from "../../../Context/CartContext";
 
 const Details = (props) => {
+  const { cartItems, setCartItems } = useCart();
   const product_details = ShoesData.filter(
     (item) => item.productId === props.productId
   )[0];
@@ -51,7 +53,7 @@ const Details = (props) => {
           <div className="new_release_tag">New Release</div>
         ) : null}
         <h4>{product_details.name}</h4>
-        <h5>${product_details.price}</h5>
+        <h5>${product_details.price.toFixed(2)}</h5>
         <h6>Color</h6>
         <div className="colors_list">
           {product_details.colors.map((color, index) => (
@@ -84,7 +86,20 @@ const Details = (props) => {
         </div>
         <div className="product_detail__details__container-buttons">
           <div className="app__flex">
-            <button>Add to cart</button>
+            <button
+              onClick={() =>
+                setCartItems([
+                  ...cartItems,
+                  {
+                    ...product_details,
+                    color: selectedColor,
+                    size: selectedSize,
+                  },
+                ])
+              }
+            >
+              Add to cart
+            </button>
             <FaRegHeart />
           </div>
           <button>Buy it now</button>

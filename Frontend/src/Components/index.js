@@ -5,6 +5,7 @@ import ShoeCard from "./ShoeCard/ShoeCard";
 import CategoriesCard from "./CategoriesCard/CategoriesCard";
 import ReviewCard from "./ReviewCard/ReviewCard";
 import Filters from "./Filters/Filters";
+import CartItem from "./CartItem/CartItem";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   CategoriesCard,
   ReviewCard,
   Filters,
+  CartItem,
 };

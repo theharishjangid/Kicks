@@ -64,11 +64,11 @@ const Footer = () => {
                 to={{
                   pathname: "/products",
                   search: new URLSearchParams({
-                    category: "runner",
+                    category: "running",
                   }).toString(),
                 }}
               >
-                Runner
+                Running
               </Link>
               <Link
                 to={{

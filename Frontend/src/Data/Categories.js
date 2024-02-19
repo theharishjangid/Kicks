@@ -8,7 +8,7 @@ import HikingShoes from "../Assets/Categories/hiking.png";
 const CategoriesList = [
   "sneaker",
   "basketball",
-  "runner",
+  "running",
   "outdoor",
   "golf",
   "hiking",
@@ -24,7 +24,7 @@ const CategoriesData = [
     image: BasketballShoes,
   },
   {
-    name: "runner",
+    name: "running",
     image: RunnerShoes,
   },
   {

@@ -1,16 +1,16 @@
 .home__new__container {
     flex-direction: column;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 
     @media screen and (max-width: 750px) {
-        margin-bottom: 1.75rem;
-        margin-top: 1.75rem;
+        padding-bottom: 1.75rem;
+        padding-top: 1.75rem;
     }
 
     @media screen and (max-width: 450px) {
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
     }
 }
 
