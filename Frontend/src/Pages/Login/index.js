@@ -1,4 +1,5 @@
 import React from "react";
+import LoginForm from "./LoginForm/LoginForm";
 
 const Login = () => {
   React.useEffect(() => {
@@ -6,7 +7,7 @@ const Login = () => {
   }, []);
   return (
     <div className="app__page__container">
-      <h2>Login</h2>
+      <LoginForm />
     </div>
   );
 };

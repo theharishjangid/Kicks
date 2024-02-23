@@ -7,6 +7,7 @@ import ReviewCard from "./ReviewCard/ReviewCard";
 import Filters from "./Filters/Filters";
 import CartItem from "./CartItem/CartItem";
 import CheckoutItem from "./CheckoutItem/CheckoutItem";
+import JoinClub from "./JoinClub/JoinClub";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Filters,
   CartItem,
   CheckoutItem,
+  JoinClub,
 };

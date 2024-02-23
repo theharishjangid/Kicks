@@ -99,7 +99,7 @@ const CheckoutForm = () => {
               </label>
             </div>
           </div>
-          <button>REVIEW AND PAY</button>
+          <button type='submit'>REVIEW AND PAY</button>
         </form>
       </div>
       <div className="app__flex checkout_form__container-body">
