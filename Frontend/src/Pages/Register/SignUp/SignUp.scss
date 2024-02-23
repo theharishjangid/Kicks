@@ -1,4 +1,4 @@
-.login__container {
+.sign_up__container {
     display: flex;
     width: 100%;
 
@@ -7,7 +7,7 @@
     }
 }
 
-.login__container-form {
+.sign_up__container-form {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,10 @@
         }
     }
 
+    h5 {
+        margin-top: 1rem;
+    }
+
     h6 {
         margin: 0.5rem 0;
         font-size: 1rem;
@@ -29,7 +33,7 @@
 
     form {
 
-        input[type=email], input[type=password] {
+        input[type=text], input[type=email], input[type=password] {
             width: 70%;
             outline: none;
             border: 1px solid var(--dark_gray-color);
@@ -49,6 +53,14 @@
             margin-top: 1rem;
             accent-color: var(--dark_gray-color);
             margin: 0.75rem 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        input[type=radio] {
+            accent-color: var(--dark_gray-color);
 
             &:hover {
                 cursor: pointer;
@@ -79,7 +91,7 @@
             text-transform: uppercase;
             border-radius: 0.5rem;
             padding: 1rem;
-            margin: 0.75rem 0;
+            margin: 1rem 0;
 
             &:hover {
                 cursor: pointer;
@@ -116,6 +128,7 @@
 .checkbox-input__alignment {
     display: flex;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
 .social_auth {
@@ -137,5 +150,14 @@
             cursor: pointer;
             color: var(--black-color);
         }
+    }
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+
+    div {
+        margin: 0.5rem 1rem 1rem 0;
     }
 }

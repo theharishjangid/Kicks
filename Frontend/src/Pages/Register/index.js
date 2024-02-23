@@ -1,4 +1,5 @@
 import React from "react";
+import SignUp from "./SignUp/SignUp";
 
 const Register = () => {
   React.useEffect(() => {
@@ -6,7 +7,7 @@ const Register = () => {
   }, []);
   return (
     <div className="app__page__container">
-      <h2>Register</h2>
+      <SignUp />
     </div>
   );
 };

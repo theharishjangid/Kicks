@@ -75,6 +75,10 @@
         input[type=checkbox] {
             margin-top: 1rem;
             accent-color: var(--dark_gray-color);
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         p {
