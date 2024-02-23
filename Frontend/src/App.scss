@@ -146,3 +146,29 @@ a {
         display: none;
     }
 }
+
+.input_validation {
+    position: relative;
+
+    p {
+        position: absolute;
+        bottom: -0.5rem;
+        left: 1rem;
+        color: var(--red-color);
+        font-size: 0.875rem;
+        font-family: "OpenSans-Regular";
+    }
+}
+
+.big_input_validation {
+    position: relative;
+
+    p {
+        position: absolute;
+        left: 1rem;
+        bottom: -1rem;
+        color: var(--red-color);
+        font-size: 0.875rem;
+        font-family: "OpenSans-Regular";
+    }
+}

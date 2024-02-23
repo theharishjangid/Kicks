@@ -10,17 +10,49 @@ import {
   FaTwitter,
   FaTiktok,
 } from "react-icons/fa";
+import { useFormik } from "formik";
+import { object, string } from "yup";
+
+const LoginSchema = object({
+  email: string()
+    .email("Please enter a valid email")
+    .required("Please enter your email"),
+});
 
 const Footer = () => {
+  const {
+    values,
+    errors,
+    touched,
+    isValid,
+    dirty,
+    handleBlur,
+    handleChange,
+    handleSubmit,
+  } = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validationSchema: LoginSchema,
+    onSubmit: (values) => {
+      console.log("Form data", values);
+    },
+  });
   return (
     <div className="app__container app__flex app__footer__container">
       <div className="app__flex app__footer__top">
         <div className=" app__flex app__footer__top-newsletter_form">
           <h3>Join our KicksPlus Club & get 15% off</h3>
-          <p>Sign up for free! Join the community.</p>
-          <form>
-            <input type="email" placeholder="Email address" />
-            <button type="submit">submit</button>
+          <p className="p-text">Sign up for free! Join the community.</p>
+          <form onSubmit={handleSubmit}>
+            <div className="big_input_validation">
+              <input type="email" placeholder="Email address" name="email"
+              value={values.email}
+              onChange={handleChange}
+              onBlur={handleBlur}/>
+              {errors.email && touched.email ? <p>{errors.email}</p> : null}
+            </div>
+            <button type="submit" disabled={!(isValid && dirty)}>submit</button>
           </form>
         </div>
         <div className="app__flex app__footer__top-logo">

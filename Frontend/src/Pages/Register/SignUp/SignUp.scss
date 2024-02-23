@@ -98,6 +98,12 @@
                 background-color: var(--black-color);
             }
 
+            &:disabled {
+                background-color: var(--disable_bg-color);
+                color: var(--white-color);
+                cursor: not-allowed;
+            }
+
             @media screen and (max-width: 1200px) {
                 width: 100%;
             }
