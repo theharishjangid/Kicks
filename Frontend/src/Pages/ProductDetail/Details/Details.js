@@ -4,8 +4,10 @@ import { ShoesData, AvailableSizes } from "../../../Data/Shoes";
 import { BsCircleFill } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa6";
 import useCart from "../../../Context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const Details = (props) => {
+  const navigate = useNavigate();
   const { cartItems, setCartItems } = useCart();
   const product_details = ShoesData.filter(
     (item) => item.productId === props.productId
@@ -102,7 +104,21 @@ const Details = (props) => {
             </button>
             <FaRegHeart />
           </div>
-          <button>Buy it now</button>
+          <button
+            onClick={() => {
+              setCartItems([
+                ...cartItems,
+                {
+                  ...product_details,
+                  color: selectedColor,
+                  size: selectedSize,
+                },
+              ]);
+              navigate("/checkout");
+            }}
+          >
+            Buy it now
+          </button>
         </div>
         <h6>About the product</h6>
         <p className="product_title">

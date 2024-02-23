@@ -1,0 +1,361 @@
+.checkout_form__container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.checkout_form__container-form {
+    width: 58%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: var(--dark_gray-color);
+
+    h6 {
+        font-size: 1.25rem;
+        font-family: "OpenSans-SemiBold";
+
+        @media screen and (max-width: 750px) {
+            font-size: 1rem;
+        }
+    }
+
+    h4 {
+        margin-top: 2rem;
+
+        @media screen and (max-width: 750px) {
+            margin-top: 1.5rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin-top: 1rem;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        font-family: "OpenSans-Regular";
+
+        @media screen and (max-width: 750px) {
+            font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 0.875rem;
+        }
+    }
+
+    form {
+        width: 100%;
+
+        input[type=text], input[type=email], input[type=tel] {
+            outline: none;
+            border: 1px solid var(--dark_gray-color);
+            border-radius: 0.5rem;
+            background-color: transparent;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-family: "OpenSans-Regular";
+        }
+
+        input[type=email] {
+            width: 48%;
+            margin-top: 1.25rem;
+
+            @media screen and (max-width: 750px) {
+                width: 100%;
+            }
+        }
+
+        input[type=checkbox] {
+            margin-top: 1rem;
+            accent-color: var(--dark_gray-color);
+        }
+
+        p {
+            font-size: 0.75rem;
+        }
+    }
+
+    button {
+        outline: none;
+        border: none;
+        width: 50%;
+        font-family: "Rubik";
+        font-size: 0.85rem;
+        color: var(--white-color);
+        background: var(--dark_gray-color);
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1.5rem 0;
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--black-color);
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin: 1.25rem 0;
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 100%;
+            font-size: 0.8rem;
+            padding: 0.75rem;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 0.75rem;
+            margin-top: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin-top: 1.75rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin-top: 1.25rem;
+    }
+}
+
+.name__input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+        margin-top: 1.25rem;
+        width: 48%;
+
+        @media screen and (max-width: 750px) {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+    }
+}
+
+.address__input {
+    width: 100%;
+    margin-top: 1.25rem;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin-top: 1rem;
+    }
+}
+
+.tel__input {
+    width: 100%;
+    margin-top: 1.25rem;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        margin-top: 0;
+        width: 48%;
+
+        @media screen and (max-width: 750px) {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        margin-top: 1rem;
+    }
+}
+
+.form__cards {
+    margin: 1.25rem 0 0.5rem 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--dark_gray-color);
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h5 {
+            font-size: 1.5rem;
+            font-family: "Rubik";
+
+            @media screen and (max-width: 750px) {
+                font-size: 1.25rem;
+            }
+        }
+
+        span {
+            font-size: 1.5rem;
+            font-family: "Rubik";
+
+            @media screen and (max-width: 750px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    h6 {
+        margin-top: 0.25rem;
+        font-size: 1rem;
+        font-family: "OpenSans-SemiBold";
+
+        @media screen and (max-width: 750px) {
+            font-size: 0.875rem;
+        }
+    }
+
+    &:hover {
+        border: 1px solid var(--off_white-color);
+        background-color: var(--off_white-color);
+        span {
+            color: var(--blue-color);
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+}
+
+.selected_card {
+    border: 1px solid var(--off_white-color);
+        background-color: var(--off_white-color);
+        span {
+            color: var(--blue-color);
+        }
+}
+
+.checkbox__input {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        font-family: "OpenSans-Semibold";
+    }
+}
+
+.newsletter__heading {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-family: "Rubik";
+
+    @media screen and (max-width: 750px) {
+        margin-top: 1rem;
+    }
+}
+
+.checkout_form__container-body{
+    flex-direction: column;
+    width: 40%;
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+}
+
+.checkout_form__container-bag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: var(--off_white-color);
+    margin-top: 1rem;
+
+    .checkout_form__container-bag_items {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 750px) {
+        padding: 1rem;
+    }
+}
+
+
+.checkout_form__container-summary {
+    width: 100%;
+    background-color: var(--off_white-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1.5rem;
+
+    h4 {
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: 1000px) {
+            margin-bottom: 1.25rem;
+        }
+
+        @media screen and (max-width: 750px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        padding: 1rem;
+    }
+}
+
+.checkout_form__container-summary_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-family: "OpenSans-SemiBold";
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1rem;
+    }
+}
+
+.checkout_form__container-summary_total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: "Rubik";
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+}

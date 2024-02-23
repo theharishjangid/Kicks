@@ -6,6 +6,7 @@ import CategoriesCard from "./CategoriesCard/CategoriesCard";
 import ReviewCard from "./ReviewCard/ReviewCard";
 import Filters from "./Filters/Filters";
 import CartItem from "./CartItem/CartItem";
+import CheckoutItem from "./CheckoutItem/CheckoutItem";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   ReviewCard,
   Filters,
   CartItem,
+  CheckoutItem,
 };

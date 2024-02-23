@@ -124,10 +124,6 @@
             background-color: var(--black-color);
         }
 
-        span {
-            color: var(--yellow-color);
-        }
-
         @media screen and (max-width: 1000px) {
             margin: 1.25rem 0;
         }
@@ -177,5 +173,75 @@
     @media screen and (max-width: 1000px) {
         font-size: 1.25rem;
         margin-bottom: 0;
+    }
+}
+
+.cart_list__container-empty {
+    width: 100%;
+    flex-direction: column;
+    margin: 2rem;
+
+    img {
+        width: 20%;
+
+        @media screen and (max-width: 1024px) {
+            width: 30%;
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 50%;
+        }
+    }
+
+    p {
+        font-family: "OpenSans-Regular";
+        font-size: 1rem;
+        text-align: center;
+
+        @media screen and (max-width: 750px) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 0.75rem;
+        }
+    }
+
+    button {
+        outline: none;
+        border: none;
+        width: 40%;
+        font-family: "Rubik";
+        font-size: 0.85rem;
+        color: var(--white-color);
+        background: var(--dark_gray-color);
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+        margin: 1.5rem 0;
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--black-color);
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin: 1.25rem 0;
+            width: 50%;
+        }
+
+        @media screen and (max-width: 750px) {
+            font-size: 0.8rem;
+            width: 70%;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 0.75rem;
+            margin: 1rem 0;
+            width: 100%;
+        }
     }
 }

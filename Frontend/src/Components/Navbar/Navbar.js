@@ -1,11 +1,13 @@
 import React from "react";
 import "./Navbar.scss";
 import { IoSearch, IoPerson } from "react-icons/io5";
-import { RiShoppingCartLine } from "react-icons/ri";
+import { RiShoppingCartLine, RiShoppingCartFill } from "react-icons/ri";
 import { HiMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import useCart from "../../Context/CartContext";
 
 const Navbar = () => {
+  const { cartItems } = useCart();
   return (
     <nav className="app__container app__navbar__container">
       <ul className="app__flex app__navbar__container-left_tab">
@@ -46,7 +48,16 @@ const Navbar = () => {
           <IoPerson />
         </Link>
         <Link to="/cart">
-          <RiShoppingCartLine />
+          <div className="app__flex cart__count">
+            {cartItems.length > 0 ? (
+              <RiShoppingCartFill />
+            ) : (
+              <RiShoppingCartLine />
+            )}
+            {cartItems.length > 0 && (
+              <span className="app__flex">{cartItems.length}</span>
+            )}
+          </div>
         </Link>
       </div>
     </nav>

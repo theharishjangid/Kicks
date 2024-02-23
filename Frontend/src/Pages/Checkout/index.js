@@ -1,4 +1,5 @@
 import React from "react";
+import CheckoutForm from "./CheckoutForm/CheckoutForm";
 
 const Checkout = () => {
   React.useEffect(() => {
@@ -6,7 +7,7 @@ const Checkout = () => {
   }, []);
   return (
     <div className="app__page__container">
-      <h2>Checkout</h2>
+      <CheckoutForm />
     </div>
   );
 };
