@@ -3,7 +3,7 @@ import "./SignUp.scss";
 import { JoinClub } from "../../../Components";
 import { FaArrowRight, FaGoogle, FaApple, FaFacebook } from "react-icons/fa";
 import { useFormik } from "formik";
-import { object, string, boolean } from "yup";
+import { object, string, boolean, ref } from "yup";
 
 const SignUpSchema = object({
   firstName: string()
@@ -24,6 +24,9 @@ const SignUpSchema = object({
     .matches(/[A-Z]/, "Password must contain at least 1 upper case letter")
     .matches(/[0-9]/, "Password must contain at least 1 number")
     .matches(/[^\w]/, "Password must contain at least 1 special character"),
+  confirmPassword: string()
+    .oneOf([ref("password"), null], "Confirm password must match the password")
+    .required("Please enter the Confirm Password"),
   tnc: boolean().oneOf(
     [true],
     "You must accept the terms and conditions to login"
@@ -47,6 +50,7 @@ const SignUp = () => {
       gender: "",
       email: "",
       password: "",
+      confirmPassword: "",
       tnc: true,
       loggedIn: true,
     },
@@ -154,6 +158,19 @@ const SignUp = () => {
             />
             {errors.password && touched.password ? (
               <p>{errors.password}</p>
+            ) : null}
+          </div>
+          <div className="input_validation">
+            <input
+              type="text"
+              name="confirmPassword"
+              placeholder="Confirm Password*"
+              value={values.confirmPassword}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            {errors.confirmPassword && touched.confirmPassword ? (
+              <p>{errors.confirmPassword}</p>
             ) : null}
           </div>
           <div className="checkbox-input__alignment big_input_validation">

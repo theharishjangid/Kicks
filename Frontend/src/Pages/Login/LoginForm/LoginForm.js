@@ -11,12 +11,7 @@ const LoginSchema = object({
     .email("Please enter a valid email")
     .required("Please enter your email"),
   password: string()
-    .min(8, "Password must be at least 8 characters")
     .required("Please enter the password")
-    .matches(/[a-z]/, "Password must contain at least 1 lower case letter")
-    .matches(/[A-Z]/, "Password must contain at least 1 upper case letter")
-    .matches(/[0-9]/, "Password must contain at least 1 number")
-    .matches(/[^\w]/, "Password must contain at least 1 special character"),
 });
 
 const LoginForm = () => {

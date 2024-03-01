@@ -61,7 +61,7 @@ const CheckoutForm = () => {
     priceSum += cartItems[i]["price"];
   }
   let tax = priceSum * 0.18;
-  let delivery = cartItems.length > 0 ? 6.99 : 0;
+  let delivery = (cartItems.length > 0 && deliveryOption === "standard") ? 6.99 : 0;
   return (
     <div className="checkout_form__container">
       <div className="checkout_form__container-form">

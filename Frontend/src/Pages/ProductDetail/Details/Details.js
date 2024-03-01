@@ -9,9 +9,9 @@ import { useNavigate } from "react-router-dom";
 const Details = (props) => {
   const navigate = useNavigate();
   const { cartItems, setCartItems } = useCart();
-  const product_details = ShoesData.filter(
-    (item) => item.productId === props.productId
-  )[0];
+  const product_details = ShoesData.find(
+    (product) => product.productId === props.productId
+  );
   const [selectedColor, setSelectedColor] = useState(product_details.colors[0]);
   const [selectedSize, setSelectedSize] = useState(product_details.sizes[0]);
   const [imageIndex, setImageIndex] = useState(0);
