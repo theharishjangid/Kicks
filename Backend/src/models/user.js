@@ -2,6 +2,25 @@ import { Schema, model } from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
+const cartSchema = new Schema({
+    productId: {
+        type: Schema.Types.ObjectId,
+        ref: "Product",
+    },
+    color: {
+        type: String,
+        required: true,
+    },
+    size: {
+        type: Number,
+        required: true,
+    },
+    quantity: {
+        type: Number,
+        default: 1,
+    },
+});
+
 const userSchema = new Schema(
     {
         email: {
@@ -38,12 +57,7 @@ const userSchema = new Schema(
         token: {
             type: String,
         },
-        cart: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: "Product",
-            },
-        ],
+        cart: [cartSchema],
         wishlist: [
             {
                 type: Schema.Types.ObjectId,
