@@ -31,10 +31,6 @@ To run the frontend locally, follow these steps:
 4. Run `npm start` to start the development server.
 5. Access the Kicks website in your browser at `http://localhost:3000`.
 
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to the frontend of the Kicks project, please fork this repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
-
 ## License
 
 This project is licensed under the ISC License.
