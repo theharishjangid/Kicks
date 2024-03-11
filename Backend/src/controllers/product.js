@@ -7,7 +7,6 @@ import { PRODUCT_FOLDER } from "../constants.js";
 
 export const createProduct = asyncHandler(async (req, res) => {
     try {
-        console.log(req.body);
         const {
             name,
             description,

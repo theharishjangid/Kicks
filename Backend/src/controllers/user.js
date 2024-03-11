@@ -156,7 +156,6 @@ export const getCart = asyncHandler(async (req, res) => {
             new ApiResponse(200, respData, "User cart fetched successfully")
         );
     } catch (error) {
-        console.log(error);
         if (error instanceof ApiError) {
             throw error;
         }

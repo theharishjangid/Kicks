@@ -13,6 +13,14 @@ const orderSchema = new Schema(
                     type: Schema.Types.ObjectId,
                     ref: "Product",
                 },
+                color: {
+                    type: String,
+                    required: true,
+                },
+                size: {
+                    type: Number,
+                    required: true,
+                },
                 quantity: {
                     type: Number,
                     default: 1,
@@ -44,6 +52,12 @@ const orderSchema = new Schema(
             required: true,
             enum: ["cod", "card", "upi"],
             default: "cod",
+        },
+        deliveryType: {
+            type: String,
+            required: true,
+            enum: ["standard", "store"],
+            default: "standard",
         },
     },
     {
