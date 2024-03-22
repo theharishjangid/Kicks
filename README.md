@@ -8,34 +8,36 @@ Kicks is a full-stack web application that allows users to browse, search, and p
 
 ## Features
 
-- Browse a wide range of shoe products.
-- Search for specific shoes by name or category.
-- View detailed information about each shoe product.
-- Add shoes to the shopping cart.
-- Edit cart items and update quantities.
-- Proceed to checkout and complete the purchase.
-- User authentication and authorization.
-- Easily track and manage orders from customers.
-- Create, update, and manage product listings.
-- Secure login system for administrators to access the dashboard.
+-   Browse a wide range of shoe products.
+-   Search for specific shoes by name or category.
+-   View detailed information about each shoe product.
+-   Add shoes to the shopping cart.
+-   Edit cart items and update quantities.
+-   Proceed to checkout and complete the purchase.
+-   User authentication and authorization.
+-   Easily track and manage orders from customers.
+-   Create, update, and manage product listings.
+-   Secure login system for administrators to access the dashboard.
 
 ## Technologies Used
 
-- **Frontend:**
-  - React.js
-  - React Router
+-   **Frontend:**
 
-- **Dashboard:**
-  - React.js
-  - React Router
-  - Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+    -   React.js
+    -   React Router
 
-- **Backend:**
-  - Express.js
-  - MongoDB (for data storage)
-  - Mongoose (for MongoDB object modeling)
-  - JSON Web Tokens (JWT) for authentication
-  - bcryptjs (for password hashing)
+-   **Dashboard:**
+
+    -   React.js
+    -   React Router
+    -   Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+
+-   **Backend:**
+    -   Express.js
+    -   MongoDB (for data storage)
+    -   Mongoose (for MongoDB object modeling)
+    -   JSON Web Tokens (JWT) for authentication
+    -   bcryptjs (for password hashing)
 
 ## Getting Started
 
@@ -50,7 +52,6 @@ To run the Kicks project locally, follow these steps:
 7. Run the frontend server using `npm start` in the `Frontend` directory.
 8. Run the Dashboard server using `npm start` in the `Frontend` directory.
 9. Access the Kicks website in your browser at `http://localhost:3000`.
-
 
 ## License
 

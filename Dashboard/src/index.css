@@ -1,3 +1,21 @@
+@font-face {
+	font-family: "Rubik";
+	src: local("Rubik-SemiBold"),
+		url("./Assets/Font/Rubik-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: local("OpenSans-Regular"),
+		url("./Assets/Font/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "OpenSans-SemiBold";
+	src: local("OpenSans-SemiBold"),
+		url("./Assets/Font/OpenSans-SemiBold.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

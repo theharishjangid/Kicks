@@ -1,4 +1,4 @@
-# Dashboard for Kicks
+# Kicks - Dashboard
 
 Dashboard for Kicks is a shoes e-commerce website built using React and Tailwind CSS. It provides a user-friendly interface for tracking and managing orders, as well as creating and updating products.
 
